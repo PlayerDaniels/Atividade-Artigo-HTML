@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 3 formulário </title>
+</head>
+
+<body bgcolor="ffeeee" align="left">
+
+    <h1>Formulário Completo</h1>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <p>
+                <label>Nome: <input type="text" placeholder="Nome" required name="nome">
+                </label>
+            </p>
+
+            <p>
+                <label>Sobrenome:
+                    <input type="text" placeholder="Sobrenome" required name="sobrenome">
+                </label>
+            </p>
+
+            <p>
+                <label>Email: <input type="email" placeholder="Email" required name="email">
+                </label>
+            </p>
+
+            <p>
+                <label>Telefone: <input type="tel" placeholder="Telefone" required name="telefone">
+                </label>
+            </p>
+
+            <p>
+                <label>Data de Nascimento:<input type="date" placeholder="Data de Nascimento" required name="nascimento">
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <p>
+                <label>Rua:<input type="text" placeholder="Rua Nestor Ribeiro" name="rua">
+                </label>
+            </p>
+
+            <p>
+                <label>Bairro:<input type="text" placeholder="Centro" name="rua">
+                </label>
+            </p>
+
+            <p>
+                <label>Número:<input type="number" placeholder="Número 300" name="numero">
+                </label>
+            </p>
+
+            <p>
+                <label>Cidade:<input type="text" placeholder="Jequié" name="cidade">
+                </label>
+            </p>
+
+            <p>
+                <label>Estado:<input type="text" placeholder="Bahia" name="estado">
+                </label>
+            </p>
+
+            <p>
+                <label>CEP:<input type="text" placeholder="00000-000" name="cep">
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências</legend>
+
+            <p>
+                <label>Cor:
+                <select name="cor">
+                    <option>Branco</option>
+                    <option selected>Pardo</option>
+                    <option>Negro</option>
+                    <option>Amarelo</option>
+                    <option>Não quero informar</option>
+                </select>
+                </label>
+            </p>
+            
+            <p>
+                <label>Gênero:
+                <input type="radio" name="genero" value="Masculino"> Masculino
+                <input type="radio" name="genero" value="Feminino"> Feminino
+                </label>
+            </p>
+
+            <p>
+                <label>Interesses:</label>
+                <br>
+
+                <input type="checkbox" name="interesses" value="Esportes"> Esportes
+                <br>
+
+                <input type="checkbox" name="interesses" value="Música"> Música
+                <br>
+
+                <input type="checkbox" name="interesses" value="Tecnologia"> Tecnologia
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Upload de Arquivos</legend>
+
+            <p>
+                <label>Escolha uma foto:
+                    <input type="file" name="foto" accept="image/*">
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Login</legend>
+
+            <p>
+                <label>Nome de Usuário:
+                    <input type="text" required placeholder="Mugiwara no Luffy" name="usuario">
+                </label>
+            </p>
+
+            <p>
+                <label>Senha:
+                    <input type="password" required placeholder="Senha" name="senha">
+                </label>
+            </p>
+
+            <p>
+                <label>Confirmar Senha:
+                    <input type="password" required placeholder="Confirmar Senha" name="confirmarSenha">
+                </label>
+            </p>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+
+</body>
+
+</html>
