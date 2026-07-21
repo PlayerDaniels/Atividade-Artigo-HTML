@@ -1,0 +1,112 @@
+
+body{
+    background:#FFDDDD;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.principal{
+    width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.menu{
+    width:100%;
+    background:yellow;
+    border-collapse:collapse;
+    margin-bottom:0px;
+}
+
+.menu th{
+    padding:15px 100px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+
+h1{
+    color:#cc3300;
+}
+
+.bolo{
+    width:400px;
+    border-radius:10px;
+}
+
+.receitas{
+    text-align: center;
+}
+
+
+.vendas-ingredientes{
+    text-align: center;
+    padding: 20px 300px;
+    
+}
+.ingredientes{
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.ingredientes-imagens{
+    padding: 20px;
+    width:100%;
+    margin-top:30px;
+}
+
+.ingredientes-imagens img{
+    width:150px;
+    height:120px;
+}
+
+.ingredientes-imagens a{
+    text-decoration:none;
+    color: #333;
+}
+
+.tabela{
+   text-align: center;
+    padding: 20px 300px;   
+}
+
+.tabela-precos{
+    width:100%;
+    margin-top:30px;
+}
+
+.tabela-precos th{
+    background:#333;
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.tabela-precos td{
+    border-radius: 10px;
+    padding:10px;
+}
+
+.solido{
+    background:#FFF6CC;
+}
+
+.liquido{
+    background:#7d95ff;
+}
+
+.valor{
+    color:blue;
+    font-weight:bold;
+}
+
+.total{
+    color:green;
+    font-weight:bold;
+}
+   
+   

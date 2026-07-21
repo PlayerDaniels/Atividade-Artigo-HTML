@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 - Receita de Bolo</title>
+
+    <link rel="stylesheet" href="asdasdstyle.css">
+</head>
+
+<body>
+
+
+<style>
+body{
+    background:#FFDDDD;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.principal{
+    width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.menu{
+    width:100%;
+    background:yellow;
+    border-collapse:collapse;
+    margin-bottom:0px;
+}
+
+.menu th{
+    padding:15px 100px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+
+h1{
+    color:#cc3300;
+}
+
+.bolo{
+    width:400px;
+    border-radius:10px;
+}
+
+.receitas{
+    text-align: center;
+}
+
+
+.vendas-ingredientes{
+    text-align: center;
+    padding: 20px 300px;
+    
+}
+.ingredientes{
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.ingredientes-imagens{
+    padding: 20px;
+    width:100%;
+    margin-top:30px;
+}
+
+.ingredientes-imagens img{
+    width:150px;
+    height:120px;
+}
+
+.ingredientes-imagens a{
+    text-decoration:none;
+    color: #333;
+}
+
+.tabela{
+   text-align: center;
+    padding: 20px 300px;   
+}
+
+.tabela-precos{
+    width:100%;
+    margin-top:30px;
+}
+
+.tabela-precos th{
+    background:#333;
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.tabela-precos td{
+    border-radius: 10px;
+    padding:10px;
+}
+
+.solido{
+    background:#FFF6CC;
+}
+
+.liquido{
+    background:#7d95ff;
+}
+
+.valor{
+    color:blue;
+    font-weight:bold;
+}
+
+.total{
+    color:green;
+    font-weight:bold;
+}
+   
+   
+</style>
+    <div class="Principal">
+
+        <table class="menu">
+            <tr>
+                <th><a href="#inicio">Início</a></th>
+                <th><a href="#mais-receitas">Mais Receitas</a></th>
+                <th><a href="#receitas-premium">Receitas Premium</a></th>
+            </tr>
+        </table>
+    <div class="receitas">
+        <h1 class="receita">BOLO DE CENOURA</h1>
+
+        <img src="img/bolo.jpg" class="bolo">
+
+        <h2>Ingredientes</h2>
+            <li>3 cenouras médias</li>
+            <li>4 ovos</li>
+            <li>1 xícara de óleo</li>
+            <li>2 xícaras de açúcar</li>
+            <li>2 xícaras de farinha de trigo</li>
+            <li>1 colher de fermento em pó</li>
+        
+
+        <h2>Modo de Preparo</h2>
+
+        <p>Bata as cenouras, os ovos e o óleo no liquidificador.</p>
+
+        <p>Adicione o açúcar e bata novamente.</p>
+
+        <p>Acrescente a farinha de trigo e misture.</p>
+
+        <p>Adicione o fermento em pó.</p>
+
+        <p>Leve ao forno por aproximadamente 40 minutos.</p>
+    </div>
+
+
+    <div class="vendas-ingredientes">
+        <table class="ingredientes-imagens">
+            <tr>
+
+                <th>
+                    <h3>Cenouras</h3>
+                    <img src="img/cenoura.jpg">
+                    <br>
+                    <a href="https://a.co/d/07ScT1eE">Comprar cenoura</a>
+                </th>
+
+                <th>
+                    <h3>Ovos</h3>
+                    <img src="img/ovos.jpg">
+                    <br>
+                    <a href="https://a.co/d/0enhOp90">Comprar ovos</a>
+                </th>
+
+                <th>
+                    <h3>Óleo</h3>
+                    <img src="img/oleo.jpg">
+                    <br>
+                    <a href="https://a.co/d/05mownpK">Comprar óleo</a>
+                </th>
+
+                <th>
+                    <h3>Açúcar</h3>
+                    <img src="img/acucar.jpg">
+                    <br>
+                    <a href="https://a.co/d/0boKpWjf">Comprar açúcar</a>
+                </th>
+
+                <th>
+                    <h3>Farinha de Trigo</h3>
+                    <img src="img/farinha.jpg">
+                    <br>
+                    <a href="https://a.co/d/03DvuaMY">Comprar farinha</a>
+                </th>
+
+                <th>
+                    <h3>Fermento</h3>
+                    <img src="img/fermento.jpg">
+                    <br>
+                    <a href="https://a.co/d/02Yd88SS">Comprar fermento</a>
+                </th>
+
+            </tr>
+        </table>
+
+</div>
+
+
+<div class="tabela">
+        <h2>Tabela de Preço dos Ingredientes</h2>
+
+        <table class="tabela-precos">
+            <tr>
+                <th>Produto</th>
+                <th>Unidade</th>
+                <th>Preço Unitário</th>
+                <th>Quantidade</th>
+                <th>Preço Total</th>
+            </tr>
+
+            <tr class="solido">
+                <td>Cenoura</td>
+                <td>Kg</td>
+                <td class="valor">R$ 8,00</td>
+                <td>500 g</td>
+                <td class="total">R$ 4,00</td>
+            </tr>
+
+            <tr class="solido">
+                <td>Ovos</td>
+                <td>Unidade</td>
+                <td class="valor">R$ 1,20</td>
+                <td>4 unidades</td>
+                <td class="total">R$ 4,80</td>
+            </tr>
+
+            <tr class="liquido">
+                <td>Óleo</td>
+                <td>Litro</td>
+                <td class="valor">R$ 10,00</td>
+                <td>250 ml</td>
+                <td class="total">R$ 2,50</td>
+            </tr>
+
+            <tr class="solido">
+                <td>Açúcar</td>
+                <td>Kg</td>
+                <td class="valor">R$ 6,00</td>
+                <td>400 g</td>
+                <td class="total">R$ 2,40</td>
+            </tr>
+
+            <tr class="solido">
+                <td>Farinha de Trigo</td>
+                <td>Kg</td>
+                <td class="valor">R$ 7,00</td>
+                <td>500 g</td>
+                <td class="total">R$ 3,50</td>
+            </tr>
+
+            <tr class="solido">
+                <td>Fermento em Pó</td>
+                <td>100 g</td>
+                <td class="valor">R$ 5,00</td>
+                <td>15 g</td>
+                <td class="total">R$ 0,75</td>
+            </tr>
+
+        </table>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
