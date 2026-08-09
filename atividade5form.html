@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 5 formulário </title>
+</head>
+
+
+
+<style>
+.principal {
+    font-family: Arial, sans-serif;
+    width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.titulo {
+    text-align: center;
+    color: #006eff;
+}
+
+.dados-endereco {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.formulario {
+    width: 100%;
+}
+
+.grupo {
+    background-color: #fff;
+    border: 1px solid #006eff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.titulo-grupo {
+    background-color: #006eff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    
+}
+
+.campo {
+    margin-bottom: 15px;
+    
+}
+
+.input {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #006eff;
+    border-radius: 5px; 
+}
+
+.selecionar {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.arquivo {
+    margin-top: 5px;
+}
+
+.botao-enviar {
+    text-align: center;
+}
+
+.botao {
+    background-color: #006eff;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+</style>
+
+<body>
+<div class="principal">
+
+    <h1 class="titulo">Formulário Completo</h1>
+
+    <form action="" method="post" class="formulario">
+        
+    <div class="dados-endereco">
+
+        <fieldset class="grupo">
+            <legend class="titulo-grupo">Dados Pessoais</legend>
+
+            <p class="campo">
+                <label>Nome: <input class="input" type="text" placeholder="Nome" required name="nome">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Sobrenome:
+                    <input class="input" type="text" placeholder="Sobrenome" required name="sobrenome">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Email: <input class="input" type="email" placeholder="Email" required name="email">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Telefone: <input class="input" type="tel" placeholder="Telefone" required name="telefone">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Data de Nascimento:<input class="input" type="date" placeholder="Data de Nascimento" required name="nascimento">
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <legend class="titulo-grupo">Endereço</legend>
+
+            <p class="campo">
+                <label>Rua:<input class="input" type="text" placeholder="Rua Nestor Ribeiro" name="rua">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Bairro:<input class="input" type="text" placeholder="Centro" name="bairro">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Número:<input class="input" type="number" placeholder="Número 300" name="numero">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Cidade:<input class="input" type="text" placeholder="Jequié" name="cidade">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Estado:<input class="input" type="text" placeholder="Bahia" name="estado">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>CEP:<input class="input" type="text" placeholder="00000-000" name="cep">
+                </label>
+            </p>
+        </fieldset>
+    </div>
+
+        <fieldset class="grupo">
+            <legend class="titulo-grupo">Preferências</legend>
+
+            <p class="campo">
+                <label>Cor:
+                    <select class="selecionar" name="cor">
+                        <option>Branco</option>
+                        <option selected>Pardo</option>
+                        <option>Negro</option>
+                        <option>Amarelo</option>
+                        <option>Não quero informar</option>
+                    </select>
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Gênero:
+                    <input type="radio" name="genero" value="Masculino" class="radio"> Masculino
+                    <input type="radio" name="genero" value="Feminino" class="radio"> Feminino
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Interesses:</label>
+                <br>
+
+                <input class="caixa-marcar" type="checkbox" name="interesses" value="Esportes"> Esportes
+                <br>
+
+                <input class="caixa-marcar" type="checkbox" name="interesses" value="Música"> Música
+                <br>
+
+                <input class="caixa-marcar" type="checkbox" name="interesses" value="Tecnologia"> Tecnologia
+            </p>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <legend class="titulo-grupo">Upload de Arquivos</legend>
+
+            <p class="campo">
+                <label>Escolha uma foto:
+                    <input class="arquivo" type="file" name="foto" accept="image/*">
+                </label>
+            </p>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <legend class="titulo-grupo">Informações de Login</legend>
+
+            <p class="campo">
+                <label>Nome de Usuário:
+                    <input class="input" type="text" required placeholder="Mugiwara no Luffy" name="usuario">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Senha:
+                    <input class="input" type="password" required placeholder="Senha" name="senha">
+                </label>
+            </p>
+
+            <p class="campo">
+                <label>Confirmar Senha:
+                    <input class="input" type="password" required placeholder="Confirmar Senha" name="confirmarSenha">
+                </label>
+            </p>
+        </fieldset>
+
+        <p class="botao-enviar">
+            <input type="submit" value="Enviar" class="botao">
+        </p>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
